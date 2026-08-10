@@ -11,11 +11,18 @@
 //         (Comment out the name2 log after testing so your code doesn't crash).
 
 if (true) {
-  // Your declarations here:
-  
+  // Step 1
+  var name1 = "John";
+
+  // Step 2
+  let name2 = "Ravi";
 }
 
-// Your console logs here:
+// Step 3
+console.log(name1); // John
+
+// Step 4
+// console.log(name2); // ReferenceError: name2 is not defined
 
 
 
@@ -33,7 +40,8 @@ if (true) {
 // Expected output: 10
 
 // Your code here:
-
+const addArrow = (a, b) => { return a + b; };
+console.log(addArrow(5, 5)); // 10
 
 
 // ==========================================
@@ -49,7 +57,8 @@ if (true) {
 // Expected output: 12
 
 // Your code here:
-
+const multiply = (a, b) => a * b;
+console.log(multiply(4, 3)); // 12
 
 
 // ==========================================
@@ -67,7 +76,10 @@ if (true) {
 // "Guest"
 
 // Your code here:
+const greetUser = (name = "Guest") => name;
 
+console.log(greetUser("John")); // "John"
+console.log(greetUser()); // "Guest"
 
 
 // ==========================================
@@ -84,7 +96,10 @@ if (true) {
 // Expected output: "John is a React Developer."
 
 // Your code here:
-
+const tech = "React";
+const role = "Developer";
+const sentence = `John is a ${tech} ${role}.`;
+console.log(sentence); // "John is a React Developer."
 
 
 // ==========================================

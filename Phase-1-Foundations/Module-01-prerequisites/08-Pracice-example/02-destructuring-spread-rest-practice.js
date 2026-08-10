@@ -21,6 +21,9 @@ const themeColors = ["#FFFFFF", "#000000", "#FF0000"];
 // Expected output: "John" "React Developer"
 
 // Your code here:
+const { name, role } = userProfile;
+console.log(name); // "John"
+console.log(role); // "React Developer"
 
 // ==========================================
 // Q2: Object Destructuring (Renaming & Defaults)
@@ -34,6 +37,9 @@ const themeColors = ["#FFFFFF", "#000000", "#FF0000"];
 // Expected output: 101 "Online"
 
 // Your code here:
+const { id: userId, status = "Online" } = userProfile;
+console.log(userId); // 101
+console.log(status); // "Online"
 
 // ==========================================
 // Q3: Array Destructuring (The useState way)
@@ -47,6 +53,9 @@ const themeColors = ["#FFFFFF", "#000000", "#FF0000"];
 // Expected output: "#FFFFFF" "#000000"
 
 // Your code here:
+const [primaryColor, secondaryColor] = themeColors;
+console.log(primaryColor); // "#FFFFFF"
+console.log(secondaryColor); // "#000000"
 
 // ==========================================
 // Q4: Spread Operator (...) for Objects
@@ -61,6 +70,9 @@ const themeColors = ["#FFFFFF", "#000000", "#FF0000"];
 // Expected output: { theme: 'dark', notifications: true, language: 'en' }
 
 // Your code here:
+const finalSettings = { ...defaultSettings, ...userSettings };
+console.log(finalSettings); // { theme: 'dark', notifications: true, language: 'en' }
+
 
 // ==========================================
 // Q5: Spread Operator (...) for Arrays
@@ -75,6 +87,8 @@ const themeColors = ["#FFFFFF", "#000000", "#FF0000"];
 // Expected output: [ 'TypeScript', 'JavaScript', 'React', 'CSS' ]
 
 // Your code here:
+const updatedSkills = ["TypeScript", ...userProfile.skills];
+console.log(updatedSkills); // [ 'TypeScript', 'JavaScript', 'React', 'CSS' ]
 
 // ==========================================
 // Q6: Rest Operator (...) in Destructuring
@@ -88,6 +102,8 @@ const themeColors = ["#FFFFFF", "#000000", "#FF0000"];
 // Expected output: { id: 101, role: 'React Developer', skills: [ 'JavaScript', 'React', 'CSS' ] }
 
 // Your code here:
+const { name: userName, ...otherDetails } = userProfile;
+console.log(otherDetails); // { id: 101, role: 'React Developer', skills: [ 'JavaScript', 'React', 'CSS' ] }
 
 // ==========================================
 // Q7: Rest Operator (...) in Functions
@@ -102,3 +118,7 @@ const themeColors = ["#FFFFFF", "#000000", "#FF0000"];
 // Expected output: [ 'React', 'Node', 'MongoDB' ]
 
 // Your code here:
+const logTechnologies = (...techs) => {
+  console.log(techs);
+};
+logTechnologies("React", "Node", "MongoDB"); // [ 'React', 'Node', 'MongoDB' ]
