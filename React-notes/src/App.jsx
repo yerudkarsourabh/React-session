@@ -3,7 +3,10 @@ import * as Components from "./Phase-1-Foundations/Module-03-Fundamentals/01-com
 import * as Event from "./Phase-1-Foundations/Module-03-Fundamentals/04-events";
 import * as States from "./Phase-1-Foundations/Module-03-Fundamentals/05-state";
 import * as Hooks from "./hooks/01-useState";
-
+import * as ConditionalRendering from "./Phase-1-Foundations/Module-03-Fundamentals/06-conditional-rendering";
+import * as Lists from "./Phase-1-Foundations/Module-03-Fundamentals/07-rendering-list";
+import * as UseEffect from "./Phase-1-Foundations/Module-04-Intermediate/01-use-effect";
+import * as UseEffectHooks from "./hooks/02-useEffect";
 const App = () => {
   return (
     <div>
@@ -30,6 +33,15 @@ const App = () => {
        {/* <Hooks.StateBoolean /> */}
        {/* <Hooks.StateArray /> */}
        {/* <Hooks.StateObject /> */}
+
+      {/* <ConditionalRendering.Ternary /> */}
+      {/* <ConditionalRendering.LogicalAnd />
+      <ConditionalRendering.EarlyReturn />
+      <ConditionalRendering.MultipleConditions /> */}
+
+      {/* <Lists.Keys /> */}
+      {/* <UseEffect.UseEffectBasics /> */}
+      <UseEffectHooks.DataFetch />
     </div>
   );
 };
